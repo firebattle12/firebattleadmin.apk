@@ -22,7 +22,7 @@
 </div>
 <script>
     $(document).ready(function() {
-        fetch("https://script.google.com/macros/s/AKfycbw0vO3HTUQXmTSDUaNOSOePl6gqUez1oWeQLgtXaxgSumodyWfKMICY7hQpHrgEBf1X1w/exec?getData=true")
+        fetch("https://script.google.com/macros/s/AKfycbw-bkFkcjAKHq4aBpXPlqVNJ9f5ZXc8RMjhfWWpyRAHSukjSy2iqxDKphRA5ic5RFWwIQ/exec?getData=true")
             .then(response => response.json())
             .then(data => {
                 if (data.length === 0) {
@@ -53,7 +53,7 @@
         $(".loader").show();
         $("button").prop("disabled", true);
 
-        fetch("https://script.google.com/macros/s/AKfycbw0vO3HTUQXmTSDUaNOSOePl6gqUez1oWeQLgtXaxgSumodyWfKMICY7hQpHrgEBf1X1w/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbw-bkFkcjAKHq4aBpXPlqVNJ9f5ZXc8RMjhfWWpyRAHSukjSy2iqxDKphRA5ic5RFWwIQ/exec", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams({ username, amount, status })
