@@ -126,7 +126,7 @@ $(document).ready(function() {
           gameRules: $('#gameRules').val()
         };
         
-        await fetch("https://script.google.com/macros/s/AKfycbwl83bw8bfWpREzue2e3fpwkl0HjQ9Lrd1-vTea7SzNwaR3PJE2ULotC0kRWWqCdeI6cg/exec", {
+        await fetch("https://script.google.com/macros/s/AKfycbxYV0lnJUeZSzTGLGBMwAwpxZ1dQNq5w5oRWEEg_2K8mUd6ysJ9rpKLzo5s4angL5KE-A/exec", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(data)
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
   async function loadTournaments() {
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwl83bw8bfWpREzue2e3fpwkl0HjQ9Lrd1-vTea7SzNwaR3PJE2ULotC0kRWWqCdeI6cg/exec");
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxYV0lnJUeZSzTGLGBMwAwpxZ1dQNq5w5oRWEEg_2K8mUd6ysJ9rpKLzo5s4angL5KE-A/exec");
       const data = await response.json();
       const tableBody = $('#tournamentTableBody');
       tableBody.empty();
@@ -257,7 +257,7 @@ $(document).ready(function() {
     
     for (const update of updates) {
       try {
-        await fetch("https://script.google.com/macros/s/AKfycbwl83bw8bfWpREzue2e3fpwkl0HjQ9Lrd1-vTea7SzNwaR3PJE2ULotC0kRWWqCdeI6cg/exec", {
+        await fetch("https://script.google.com/macros/s/AKfycbxYV0lnJUeZSzTGLGBMwAwpxZ1dQNq5w5oRWEEg_2K8mUd6ysJ9rpKLzo5s4angL5KE-A/exec", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams({
@@ -284,7 +284,7 @@ $(document).ready(function() {
     if (confirm('Are you sure you want to delete this tournament?')) {
       const rowIndex = $(this).data('row');
       try {
-        await fetch("https://script.google.com/macros/s/AKfycbwl83bw8bfWpREzue2e3fpwkl0HjQ9Lrd1-vTea7SzNwaR3PJE2ULotC0kRWWqCdeI6cg/exec", {
+        await fetch("https://script.google.com/macros/s/AKfycbxYV0lnJUeZSzTGLGBMwAwpxZ1dQNq5w5oRWEEg_2K8mUd6ysJ9rpKLzo5s4angL5KE-A/exec", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams({ action: 'delete', row: rowIndex })
