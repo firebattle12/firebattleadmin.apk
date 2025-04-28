@@ -139,7 +139,7 @@
 
 <script>
     $(document).ready(function() {
-        fetch("https://script.google.com/macros/s/AKfycbzYxfwf8ZrdESN2XeP5-S2afxS82DASsaYMkwse7yLjJnN7XguHGg0OoMBQcGWqHI3vbw/exec?getData=true")
+        fetch("https://script.google.com/macros/s/AKfycbyaA-Oy6kiDb83Ikk6HjMC8L_PI46_MVUbtW3zro8hC-Y7UbxYCpj8OmQX3zXnNdIM8rg/exec?getData=true")
             .then(response => response.json())
             .then(data => {
                 let container = $("#withdrawContainer");
@@ -169,7 +169,7 @@
     }
 
     function updateStatus(username, upi, amount, status) {
-        fetch("https://script.google.com/macros/s/AKfycbzYxfwf8ZrdESN2XeP5-S2afxS82DASsaYMkwse7yLjJnN7XguHGg0OoMBQcGWqHI3vbw/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbyaA-Oy6kiDb83Ikk6HjMC8L_PI46_MVUbtW3zro8hC-Y7UbxYCpj8OmQX3zXnNdIM8rg/exec", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams({ username, upi, amount, status })
