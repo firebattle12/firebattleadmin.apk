@@ -69,7 +69,7 @@
                         name: $('#name').val(),
                         imageURL: result.data.url
                     };
-                    await fetch("https://script.google.com/macros/s/AKfycbx8uCuGNXBssfjwUhAhurabLUXzB4QVwCxGXimSGp3iJH0ClpaR19ADupmCKbCVi0sFmg/exec", {
+                    await fetch("https://script.google.com/macros/s/AKfycbyT9b7YoRdjR7bIsEkyWpmI6d-Mrh-4yVbQzRzqBfV11kn_Oj27qhAdfChFfgPxuehQnA/exec", {
                         method: "POST",
                         headers: { "Content-Type": "application/x-www-form-urlencoded" },
                         body: new URLSearchParams(data)
@@ -89,7 +89,7 @@
 
         async function loadData() {
             try {
-                const response = await fetch("https://script.google.com/macros/s/AKfycbx8uCuGNXBssfjwUhAhurabLUXzB4QVwCxGXimSGp3iJH0ClpaR19ADupmCKbCVi0sFmg/exec");
+                const response = await fetch("https://script.google.com/macros/s/AKfycbyT9b7YoRdjR7bIsEkyWpmI6d-Mrh-4yVbQzRzqBfV11kn_Oj27qhAdfChFfgPxuehQnA/exec");
                 const data = await response.json();
                 const tableBody = $('#tableBody');
                 tableBody.empty();
@@ -111,7 +111,7 @@
             if (confirm('Are you sure you want to delete this record?')) {
                 const rowIndex = $(this).data('row');
                 try {
-                    await fetch("https://script.google.com/macros/s/AKfycbx8uCuGNXBssfjwUhAhurabLUXzB4QVwCxGXimSGp3iJH0ClpaR19ADupmCKbCVi0sFmg/exec", {
+                    await fetch("https://script.google.com/macros/s/AKfycbyT9b7YoRdjR7bIsEkyWpmI6d-Mrh-4yVbQzRzqBfV11kn_Oj27qhAdfChFfgPxuehQnA/exec", {
                         method: "POST",
                         headers: { "Content-Type": "application/x-www-form-urlencoded" },
                         body: new URLSearchParams({ action: 'delete', row: rowIndex })
